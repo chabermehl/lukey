@@ -1,0 +1,14 @@
+h1,
+h3 {
+  color: var(--primary-text-color);
+}
+
+div {
+  display: grid;
+  place-items: center;
+}
+
+.imageContainer > h3 {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
