@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 
+const LAST_DAY = "06/01/2022";
+
 const NickName: React.FC = () => {
   const getTimeLeft = () => {
-    const timeOfReckoning = new Date("05/25/2022 05:28:00");
+    const timeOfReckoning = new Date(`${LAST_DAY} 05:28:00`);
     const now = new Date();
 
     const timeLeft = timeOfReckoning.getTime() - now.getTime();
@@ -43,7 +45,7 @@ const NickName: React.FC = () => {
       <h3>{`${time.days} Days, ${time.hours} Hours, ${time.minutes} Minutes and ${time.seconds} Seconds`}</h3>
       <h3>
         Official end time because I'm not fighting time zones if the countdown
-        is wrong: 05/25/2022 at 7:25 PM Loquacious' time
+        is wrong: {LAST_DAY} at 7:25 PM Loquacious' time
       </h3>
       <div
         className="imageContainer"
