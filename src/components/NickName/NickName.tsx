@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 
-const Complaint = () => {
+const NickName: React.FC = () => {
   const getTimeLeft = () => {
-    const timeOfReckoning = new Date("10/19/2021");
+    const timeOfReckoning = new Date("05/25/2022 05:28:00");
     const now = new Date();
 
     const timeLeft = timeOfReckoning.getTime() - now.getTime();
@@ -39,8 +39,12 @@ const Complaint = () => {
 
   return (
     <div>
-      <h1>Time Remaining Until Zaiah's HR Complaint</h1>
+      <h1>Time Remaining Until Loquacious Is No More</h1>
       <h3>{`${time.days} Days, ${time.hours} Hours, ${time.minutes} Minutes and ${time.seconds} Seconds`}</h3>
+      <h3>
+        Official end time because I'm not fighting time zones if the countdown
+        is wrong: 05/25/2022 at 7:25 PM Loquacious' time
+      </h3>
       <div
         className="imageContainer"
         onMouseEnter={handleHoverEnter}
@@ -48,17 +52,15 @@ const Complaint = () => {
       >
         <img
           src="/logo512.png"
-          alt="zaiah-head"
+          alt="Loquacious head"
           style={{ transform: `rotate(${transform}turn)` }}
         />
         {hovering ? (
-          <h3 style={{ textAlign: "center" }}>
-            REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE!
-          </h3>
+          <h3 style={{ textAlign: "center" }}>Loquacious, my dear boi</h3>
         ) : null}
       </div>
     </div>
   );
 };
 
-export default Complaint;
+export default NickName;

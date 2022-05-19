@@ -1,9 +1,9 @@
 import React from "react";
 
-import { Complaint } from "./components";
+import { NickName } from "./components";
 
 function App() {
-  return <Complaint />;
+  return <NickName />;
 }
 
 export default App;

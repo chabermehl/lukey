@@ -1,1 +1,1 @@
-export { default as Complaint } from "./Complaint/Complaint";
+export { default as NickName } from "./NickName/NickName";
