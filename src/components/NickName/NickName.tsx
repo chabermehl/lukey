@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 
-const LAST_DAY = "06/01/2022";
+const LAST_DAY = "06/15/2022";
 
 const NickName: React.FC = () => {
   const getTimeLeft = () => {
